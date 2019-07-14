@@ -13,8 +13,10 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.bmi_calculator)
 
         resultButton.setOnClickListener {
-            startActivity<ResultActivity>()
-
+            startActivity<ResultActivity>(
+                "height" to heightEdit.text.toString(),
+                "weight" to weightEdit.text.toString()
+            )
         }
     }
 }

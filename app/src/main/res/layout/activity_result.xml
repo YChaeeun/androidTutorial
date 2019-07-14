@@ -10,7 +10,7 @@
             android:layout_width="150dp"
             android:layout_height="150dp"
             app:srcCompat="@drawable/ic_insert_emoticon_black_24dp"
-            android:id="@+id/smileImage"
+            android:id="@+id/imageView"
             android:tint="@color/colorPrimary"
 
             android:layout_centerInParent="true"
@@ -20,7 +20,7 @@
             android:id="@+id/result"
             android:text="RESULT"
             android:textSize="40dp"
-            android:layout_above="@id/smileImage"
+            android:layout_above="@id/imageView"
             android:textColor="@color/colorPrimary"
             android:layout_centerInParent="true"
             android:layout_width="wrap_content"
@@ -33,7 +33,7 @@
             android:layout_centerInParent="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/smileImage"/>
+            android:layout_below="@id/imageView"/>
 
 
 </RelativeLayout>
