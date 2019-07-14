@@ -27,6 +27,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/heightEdit"/>
     <Button
+            android:id="@+id/resultButton"
             android:text="Result"
             android:textStyle="bold"
             android:layout_marginTop="10dp"

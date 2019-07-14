@@ -3,6 +3,8 @@ package com.example.practice
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.bmi_calculator.*
+import org.jetbrains.anko.startActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -10,6 +12,9 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.bmi_calculator)
 
+        resultButton.setOnClickListener {
+            startActivity<ResultActivity>()
 
+        }
     }
 }
