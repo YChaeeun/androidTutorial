@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Practice</string>
+    <string name="hell">안녕하세요!</string>
+    <string name="button">버튼</string>
+</resources>
