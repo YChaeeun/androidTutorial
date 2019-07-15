@@ -4,7 +4,7 @@
                 xmlns:tools="http://schemas.android.com/tools"
                 android:orientation="vertical"
                 android:layout_width="match_parent"
-                android:layout_margin="20dp"
+                android:layout_margin="35dp"
                 android:layout_height="match_parent"
                 android:fadingEdge="horizontal">
 
@@ -89,6 +89,23 @@
 
             android:src="@drawable/ic_refresh_black_24dp"
             android:tint="#F9F9F9"/>
+
+    <Button
+            android:id="@+id/labTime"
+            android:text="랩타임"
+            android:textStyle="bold"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/pauseFAB"
+            android:layout_alignEnd="@+id/pauseFAB"
+
+            android:layout_marginBottom="15dp"/>
 
 
 </RelativeLayout>
