@@ -3,9 +3,7 @@ package com.example.practice
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_result.*
-import org.jetbrains.anko.image
-import org.jetbrains.anko.imageResource
-import java.math.BigInteger
+import org.jetbrains.anko.toast
 
 class ResultActivity : AppCompatActivity() {
 
@@ -16,17 +14,17 @@ class ResultActivity : AppCompatActivity() {
         // 값을 전달 받음 
         // 예외처리 해야 함-> 입력값이 숫자가 아닌 경우, 공백이 같이 입력되는 경우, 입력되지 않은 경우, 너무 큰 수를 입력한 경우, 음수를 입력한 경우, 0을 입력한 경우
 
-        //val height = intent.getStringExtra("height").toInt()
-        //val weight = intent.getStringExtra("weight").toInt()
+        val height = intent.getStringExtra("height").toInt()
+        val weight = intent.getStringExtra("weight").toInt()
 
-        val height = intent.getStringExtra("height") as? Int ?: 0
-        val weight = intent.getStringExtra("weight") as? Int ?: 0
+        //val height = intent.getStringExtra("height") as? Int ?: 0
+        //val weight = intent.getStringExtra("weight") as? Int ?: 0
 
         // height나 weight가 0인 경우, 강제 종료 혹은 다시 입력하라는 안내창 띄우기(?)
 
         // bmi 계산
         val bmi = weight / Math.pow(height / 100.0, 2.0)
-
+        toast("$bmi")
 
         // 결과
         when {
@@ -53,6 +51,5 @@ class ResultActivity : AppCompatActivity() {
                 resultText.text = "운동운동"
             }
         }
-
     }
 }
