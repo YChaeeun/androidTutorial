@@ -18,5 +18,8 @@ class MainActivity : AppCompatActivity() {
                 "weight" to weightEdit.text.toString()
             )
         }
+        timer.setOnClickListener {
+            startActivity<TimerActivity>()
+        }
     }
 }

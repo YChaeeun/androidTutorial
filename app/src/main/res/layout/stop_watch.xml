@@ -6,10 +6,11 @@
                 android:layout_width="match_parent"
                 android:layout_margin="35dp"
                 android:layout_height="match_parent"
-                android:fadingEdge="horizontal">
+                android:fadingEdge="horizontal"
+                tools:context=".TimerActivity">
 
     <TextView
-            android:text="40"
+            android:text="0"
             android:textSize="110dp"
             android:id="@+id/timeSec"
             android:layout_width="wrap_content"
@@ -81,6 +82,8 @@
             android:layout_alignParentBottom="true"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
 
             android:backgroundTint="@color/colorPrimary"
 
@@ -97,7 +100,7 @@
 
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
+            android:padding="0dp"
 
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true"
@@ -105,7 +108,5 @@
             android:layout_alignRight="@+id/pauseFAB"
             android:layout_alignEnd="@+id/pauseFAB"
 
-            android:layout_marginBottom="15dp"/>
-
-
+            android:layout_marginBottom="3dp"/>
 </RelativeLayout>
