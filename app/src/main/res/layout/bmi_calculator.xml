@@ -1,28 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 android:orientation="vertical"
+                android:layout_margin="35dp"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-
     <EditText
-            android:layout_marginLeft="25dp"
-            android:layout_marginTop="50dp"
-            android:layout_marginRight="25dp"
             android:id="@+id/heightEdit"
             android:hint="height"
-            android:textSize="30dp"
+            android:textSize="30sp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
     <EditText
             android:id="@+id/weightEdit"
-
             android:hint="weight"
-            android:textSize="30dp"
-
-            android:layout_marginRight="25dp"
-            android:layout_marginLeft="25dp"
-
+            android:textSize="30sp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/heightEdit"/>
@@ -31,11 +23,13 @@
             android:text="Result"
             android:textStyle="bold"
             android:layout_marginTop="10dp"
-            android:layout_marginRight="25dp"
+
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+
             android:layout_below="@id/weightEdit"
-            android:layout_alignParentRight="true"/>
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"/>
     <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
@@ -45,12 +39,7 @@
         <Button
             android:id="@+id/timer"
             android:text="타이머"
-            android:layout_alignParentBottom="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
-
     </LinearLayout>
-
-
-
 </RelativeLayout>
