@@ -2,19 +2,21 @@ package com.example.practice
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import kotlinx.android.synthetic.main.stop_watch.*
+import android.widget.TextView
+import kotlinx.android.synthetic.main.stop_watch_2.*
 import java.util.Timer
 import kotlin.concurrent.timer
 
 private var time = 0
 private var timerTask:Timer? = null
 private var isRunning = false
+private var lap = 1
 
 class TimerActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.stop_watch)
+        setContentView(R.layout.stop_watch_2)
 
         pauseFAB.setOnClickListener{
             isRunning = !isRunning
@@ -24,6 +26,10 @@ class TimerActivity : AppCompatActivity() {
             } else {
                 pause()
             }
+        }
+
+        labTime.setOnClickListener {
+            recordLapTime()
         }
     }
 
@@ -49,4 +55,13 @@ class TimerActivity : AppCompatActivity() {
         }
     }
 
+    private fun recordLapTime(){
+        val lapTime = time
+        val textView = TextView(this)
+        textView.text = "$lap LAB : ${lapTime / 100}.${lapTime % 100}"
+
+        scrollLAB.addView(textView, 0)
+        lap++
+    }
 }
+
