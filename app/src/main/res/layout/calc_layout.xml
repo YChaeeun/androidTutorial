@@ -1,122 +1,113 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
               android:orientation="vertical"
-              android:layout_margin="20dp"
+              android:layout_margin="25dp"
               android:layout_width="match_parent"
               android:layout_height="match_parent">
     <LinearLayout
             android:layout_weight="0.05"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"></LinearLayout>
-    <LinearLayout
-            android:layout_weight="0.1"
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="0dp">
         <TextView
+                android:layout_weight="0.3"
                 android:text="재료01"
-                android:textSize="23dp"
-                android:textAlignment="center"
+                android:textSize="18sp"
                 android:textStyle="bold"
-                android:layout_width="100dp"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"/>
-
         <TextView
                 android:id="@+id/showMulResult"
-                android:text="100ml >> 3 베라 숟가락 "
-                android:textSize="20dp"
-                android:layout_gravity="top"
-                android:layout_width="213dp"
+                android:layout_weight="0.7"
+                android:layout_width="0dp"
+                android:textSize="18sp"
+                android:text="100ml >> 3 베라숟가락"
+                android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <RelativeLayout
+            android:layout_weight="0.15"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        <TextView
+                android:id="@+id/ingre"
+                android:text="재료02"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_margin="0dp"
+                android:paddingRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/textNum"/>
+        <TextView
+                android:id="@+id/ingre2"
+                android:text="200ml"
+                android:textSize="18sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_above="@id/textNum"
+                android:layout_toRightOf="@id/ingre"/>
+        <TextView
+                android:id="@+id/textNum"
+                android:hint="200g"
+                android:textSize="65sp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:padding="0dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        <Button
+                android:id="@+id/delNum"
+                android:text="X"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <LinearLayout
+            android:layout_weight="0.05"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+        <Button
+                android:text="종이컵"
+                android:textSize="18dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+        <Button
+                android:text="물뚜껑"
+                android:textSize="18dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+        <Button
+                android:text="숟가락"
+                android:textSize="18dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"/>
+        <Button
+                android:text="베라숟가락"
+                android:textSize="15dp"
+                android:layout_weight="1"
+                android:layout_width="0dp"
                 android:layout_height="match_parent"/>
     </LinearLayout>
     <LinearLayout
-            android:layout_weight="0.05"
             android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"></LinearLayout>
-    <LinearLayout
-            android:layout_weight="0.3"
-            android:orientation="vertical"
+            android:layout_weight="0.35"
             android:layout_width="match_parent"
             android:layout_height="0dp">
         <LinearLayout
-                android:layout_weight="1"
-                android:orientation="horizontal"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content">
-            <TextView
-                    android:textSize="20dp"
-                    android:text="재료02"
-                    android:textStyle="bold"
-                    android:textAlignment="center"
-                    android:layout_width="100dp"
-                    android:layout_height="wrap_content"/>
-            <TextView
-                    android:text="200g"
-                    android:textSize="20dp"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-        </LinearLayout>
-
-        <RelativeLayout
-                android:layout_weight="2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-            <TextView
-                    android:id="@+id/textNum"
-                    android:hint="200g"
-                    android:textSize="50dp"
-                    android:textAlignment="center"
-                    android:layout_width="150dp"
-                    android:layout_height="wrap_content"/>
-
-            <Button
-                    android:text="X"
-                    android:layout_alignParentRight="true"
-                    android:layout_centerInParent="true"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-        </RelativeLayout>
-
-        <LinearLayout
-                android:layout_weight="1"
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-            <Button
-                    android:text="종이컵"
-                    android:textSize="18dp"
-                    android:layout_weight="1"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"/>
-            <Button
-                    android:text="물뚜껑"
-                    android:textSize="18dp"
-                    android:layout_weight="1"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"/>
-            <Button
-                    android:text="숟가락"
-                    android:textSize="18dp"
-                    android:layout_weight="1"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"/>
-            <Button
-                    android:text="베라숟가락"
-                    android:textSize="15dp"
-                    android:layout_weight="1"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"/>
-        </LinearLayout>
-    </LinearLayout>
-    <LinearLayout
-            android:orientation="vertical"
-            android:layout_weight="0.6"
-            android:layout_width="match_parent"
-            android:layout_height="0dp">
-        <LinearLayout
-                android:layout_weight="1"
+                android:layout_weight="0.5"
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="0dp">
@@ -149,7 +140,7 @@
                     android:layout_height="match_parent"/>
         </LinearLayout>
         <LinearLayout
-                android:layout_weight="1"
+                android:layout_weight="0.5"
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="0dp">
@@ -175,6 +166,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"/>
             <Button
+
                     android:text="%"
                     android:textSize="35dp"
                     android:layout_weight="1"
@@ -182,7 +174,7 @@
                     android:layout_height="match_parent"/>
         </LinearLayout>
         <LinearLayout
-                android:layout_weight="1"
+                android:layout_weight="0.5"
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="0dp">
@@ -208,19 +200,20 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"/>
             <Button
-                    android:id="@+id/btn_reset"
+                    android:id="@+id/btn_reset_intent"
                     android:text="Reset"
-                    android:textSize="20dp"
+                    android:textSize="22sp"
                     android:layout_weight="1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"/>
         </LinearLayout>
         <LinearLayout
-                android:layout_weight="1"
+                android:layout_weight="0.5"
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
                 android:layout_height="0dp">
             <Button
+                    android:id="@+id/num0"
                     android:text="0"
                     android:textSize="35dp"
                     android:layout_weight="0.25"
@@ -238,13 +231,10 @@
                     android:layout_weight="0.25"
                     android:layout_width="0dp"
                     android:text="="
+                    android:textSize="25sp"
                     android:layout_height="match_parent"/>
 
         </LinearLayout>
     </LinearLayout>
-    <LinearLayout
-            android:layout_weight="0.03"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"></LinearLayout>
 
 </LinearLayout>
