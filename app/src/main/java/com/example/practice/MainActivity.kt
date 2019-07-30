@@ -27,6 +27,10 @@ class MainActivity : AppCompatActivity() {
             startActivity<ListviewActivity>()
         }
 
+        recycle.setOnClickListener {
+            startActivity<RecycleviewActivity>()
+        }
+
         click()
     }
 

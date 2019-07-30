@@ -33,10 +33,11 @@
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true"/>
     <LinearLayout
+            android:id="@+id/first"
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="25dp"
+            android:layout_marginTop="20dp"
             android:layout_below="@id/resultButton">
         <Button
             android:id="@+id/timer"
@@ -53,6 +54,18 @@
         <Button
                 android:id="@+id/list"
                 android:text="리스트뷰"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+    <LinearLayout
+            android:layout_below="@id/first"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <Button
+                android:id="@+id/recycle"
+                android:text="리사이클"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
     </LinearLayout>
