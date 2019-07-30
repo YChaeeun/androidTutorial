@@ -23,6 +23,10 @@ class MainActivity : AppCompatActivity() {
             startActivity<TimerActivity>()
         }
 
+        list.setOnClickListener {
+            startActivity<ListviewActivity>()
+        }
+
         click()
     }
 
